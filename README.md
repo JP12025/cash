@@ -4,22 +4,19 @@
 
 # Le problème à résoudre
 
-Supposons que vous travaillez dans un commerce et qu'un enfant vous achète un chewing-gum à 0,26€.
+Supposons que vous travaillez dans un commerce et qu'un enfant vous achète un chewing-gum à 0,36€.
 Il vous donne une pièce de 1€ et il faut donc lui rendre 64 centimes. Sachant que vous avez des pièces de
 `50`, `20`, `10`, `5`, `2` et `1` centimes, vous avez plusieurs solutions pour rendre la monnaie.
 
-Par exemple, `2x20cts + 2x10cts + 1x2cts + 2x1cts = 64` qui utilise 7 pièces ou `3x20cts + 1x2cts + 2x1cts = 64` qui utilise 6 pièces ou `3x20cts + 2x2cts = 64` qui utilise 5 pièces ou `1x50cts + 1x10cts + 2x2cts = 64` qui utilise 4 pièces.
+Par exemple, `2x20 + 2x10 + 1x2 + 2x1` qui utilise 7 pièces ou `3x20 + 1x2 + 2x1` qui utilise 6 pièces ou `3x20 + 2x2` qui utilise 5 pièces ou `1x50 + 1x10 + 2x2` qui utilise 4 pièces.
 
-Dans un fichier nommé `cash.py`, vous devez écrire un programme qui demande à l'utilisateur le montant à rendre et affiche le nombre minimum de pièces pour rendre la monnaie.
+Dans un fichier nommé `cash.py`, vous devez écrire un programme qui demande à l'utilisateur le montant à rendre (en centimes sur 1€). Une fois que l'utilisateur a répondu, le programme affiche le nombre **minimum** de pièces nécessaires sur la sortie standard.
 
 ```bash
 $ python cash.py
 Amount: 64
 4
 ```
-
-Comme vous le voyez, le programme commence par demander à l'utilisateur le montant (`Amount`) 
-à rendre. Une fois que l'utilisateur a répondu, le programme affiche le nombre minimum de pièces nécessaires sur la sortie standard.
 
 > [!TIP]
 > Pour transformer un `str`en `int`, il suffit d'utiliser la fonction `int()`
@@ -63,11 +60,3 @@ git push
 ```
 
 Des tests automatiques seront lancés dont vous pourrez voir les résultats sur github.
-
-# La vidéo d'explication
-
-Nous vous encourageons à essayer de résoudre le problème par vous même.
-Si vous êtes bloqué et/ou que votre cerveau surchauffe, vous pouvez regarder la vidéo suivante.
-Attention, il faut se connecter avec votre sésame.
-
-Lien video à ajouter
