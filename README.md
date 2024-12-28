@@ -43,6 +43,11 @@ Amount: 26
 > 
 > Be careful, a greedy algorithm is not always correct, ask yourself why (or ask chatGPT but don't trust it too much).
 
+```bash
+$ python cash.py
+Amount: 24
+3
+```
 > [!TIP]
 > How many `50` cents appear in `64`? Well as simple as `64 // 50 = 1` (and you're left with `64 % 50 = 14` cents).
 
