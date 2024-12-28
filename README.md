@@ -4,7 +4,7 @@
 
 # What to Do
 
-Suppose you work in a shop and a child buys a candy for 0.36€.
+Suppose you work in a shop and a child buys a candy for `0.36€`.
 He gives you a `1€` coin, so you have to give him `64` cents back. 
 Knowing that you have coins of `50`, `20`, `10`, `5`, `2` and `1` cents, you have several ways of giving change.
 For instance, `2x20 + 2x10 + 1x2 + 2x1` which uses 7 coins or `3x20 + 1x2 + 2x1` which uses 6 coins or `3x20 + 2x2` which uses 5 coins or `1x50 + 1x10 + 2x2` which uses 4 coins.
@@ -17,9 +17,6 @@ Amount: 64
 4
 ```
 
-> [!TIP]
-> To transform `str` into `int`, simply use `int()`.
-
 Re-prompt the user, again and again as needed, if their input is not between 1 and 99 included (or if their input isn’t an int at all!).
 
 ```bash
@@ -31,7 +28,11 @@ Amount: 26
 ```
 
 > [!TIP]
-> How many times `25` appears in `64`? Well as simple as `64 // 25` (and you're left with `64 % 25`)
+> Here, the best is a greedy algorithm. As its name says, it consists in taking the local optimal choice.
+> This choice is always to try the coin with the greater value, if its value is too high, the next coin, etc.
+
+> [!TIP]
+> How many `25` cents appear in `64`? Well as simple as `64 // 25` (and you're left with `64 % 25` cents)
 
 # When to Do it
 
