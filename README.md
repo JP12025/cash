@@ -58,7 +58,6 @@ By Sunday, january 12, 2025 at 11:59 PM
 # How to Test
 
 - Test your script with command `./check cash.py`
-- `-v` option gives the difference between what is expected and what your script prints
 
 What happens if the user input is :
 * `-1` ?
