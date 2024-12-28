@@ -39,7 +39,7 @@ Amount: 26
 > Be careful, a greedy algorithm is not always correct, ask yourself why (or ask chatGPT but don't trust it too much).
 
 > [!TIP]
-> How many `25` cents appear in `64`? Well as simple as `64 // 25` (and you're left with `64 % 25` cents)
+> How many `50` cents appear in `64`? Well as simple as `64 // 50 = 1` (and you're left with `64 % 50 = 14` cents).
 
 # When to Do it
 
