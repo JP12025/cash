@@ -9,6 +9,9 @@ He gives you a `1€` coin, so you have to give him `64` cents back.
 Knowing that you have coins of `50`, `20`, `10`, `5`, `2` and `1` cents, you have several ways of giving change.
 
 For instance:
+- `64 = 64x1` (64 coins)
+- `64 = 1x2 + 62x1` (63 coins)
+- ...
 - `64 = 2x20 + 2x10 + 1x2 + 2x1` (7 coins)
 - `64 = 3x20 + 1x2 + 2x1` (6 coins)
 - `64 = 3x20 + 2x2` (5 coins)
@@ -22,7 +25,7 @@ Amount: 64
 4
 ```
 
-Re-prompt the user, again and again as needed, if their input is not between 1 and 99 included (or if their input isn’t an int at all!).
+Re-prompt the user, again and again as needed, if their input is not between 1 and 99 included (or if their input isn’t an `int` at all!).
 
 ```bash
 $ python cash.py
@@ -33,9 +36,11 @@ Amount: 26
 ```
 
 > [!TIP]
-> If you already know how to change money, the best algorithm is called greedy algorithm. 
+> If you already know how to change money, you certainly use the so called **greedy algorithm**. 
 > As its name says, it consists in taking the locally optimal choice.
-> You begin with the greater coin (`50` cents), if its value is too high for the amount, try the next coin, etc.
+> 
+> You begin with the greater coin (`50` cents), if its value is too high for the amount, try the next coin, etc. Once you find a suitable coin, count +1 and remove the value from the amount and retry until the amount is 0.
+> 
 > Be careful, a greedy algorithm is not always correct, ask yourself why (or ask chatGPT but don't trust it too much).
 
 > [!TIP]
