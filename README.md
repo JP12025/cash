@@ -2,15 +2,14 @@
 
 ![some coins](https://4.bp.blogspot.com/-H754wB9V3kA/UnAmo0rfwUI/AAAAAAAACbI/TWQineE6nvw/s400/eurocoins.png)
 
-# Le problème à résoudre
+# What to Do
 
-Supposons que vous travaillez dans un commerce et qu'un enfant vous achète un chewing-gum à 0,36€.
-Il vous donne une pièce de 1€ et il faut donc lui rendre 64 centimes. Sachant que vous avez des pièces de
-`50`, `20`, `10`, `5`, `2` et `1` centimes, vous avez plusieurs solutions pour rendre la monnaie.
+Suppose you work in a shop and a child buys a candy for 0.36€.
+He gives you a `1€` coin, so you have to give him `64` cents back. 
+Knowing that you have coins of `50`, `20`, `10`, `5`, `2` and `1` cents, you have several ways of giving change.
+For instance, `2x20 + 2x10 + 1x2 + 2x1` which uses 7 coins or `3x20 + 1x2 + 2x1` which uses 6 coins or `3x20 + 2x2` which uses 5 coins or `1x50 + 1x10 + 2x2` which uses 4 coins.
 
-Par exemple, `2x20 + 2x10 + 1x2 + 2x1` qui utilise 7 pièces ou `3x20 + 1x2 + 2x1` qui utilise 6 pièces ou `3x20 + 2x2` qui utilise 5 pièces ou `1x50 + 1x10 + 2x2` qui utilise 4 pièces.
-
-Dans un fichier nommé `cash.py`, vous devez écrire un programme qui demande à l'utilisateur le montant à rendre (en centimes sur 1€). Une fois que l'utilisateur a répondu, le programme affiche le nombre **minimum** de pièces nécessaires sur la sortie standard.
+In a file called `cash.py`, implement a program that prints the minimum coins needed to make the given amount of change, in cents, as in the below:
 
 ```bash
 $ python cash.py
@@ -19,9 +18,9 @@ Amount: 64
 ```
 
 > [!TIP]
-> Pour transformer un `str`en `int`, il suffit d'utiliser la fonction `int()`
+> To transform `str` into `int`, simply use `int()`.
 
-Si l'utilisateur ne rentre pas un `int` entre 0 et 100, il faut redemander sans afficher de message d'erreur, comme dans l'exemple ci-dessous.
+Re-prompt the user, again and again as needed, if their input is not between 1 and 99 included (or if their input isn’t an int at all!).
 
 ```bash
 $ python cash.py
@@ -32,31 +31,27 @@ Amount: 26
 ```
 
 > [!TIP]
-> Pour savoir combien il y a `25` dans `64`, il suffit de faire `64 // 25` (et il restera `64 % 25`)
+> How many times `25` appears in `64`? Well as simple as `64 // 25` (and you're left with `64 % 25`)
 
-# Les tests
+# When to Do it
 
-N'oubliez pas qu'il est important de tester son programme.
-En effet, lorsque vous décidez de tester un programme cela vous amène à vous poser des questions
-sur ce que fait votre programme et les cas particuliers.
+By Sunday, january 12, 2025 at 11:59 PM
 
-Que se passe-t-il :
-* Si vous tapez `-1` ?
-* Si vous tapez `0` ?
-* Si vous tapez `1` ?
-* Si vous tapez `4` ?
-* Si vous tapez `5` ?
-* Si vous tapez `24` ?
-* Si vous tapez `99` ?
-* Si vous tapez `127` ?
+# How to Test
 
-# Le rendu via git
-A tout moment, vous pouvez soumettre votre travail sur github visa un `push`.
+- Test your script with command `./check [-v] cash.py`
+- `-v` option gives the difference between what is expected and what your script prints
 
-```bash
-git add cash.py
-git commit -m "My answer"
-git push
-```
+What happens if the user input is :
+* `-1` ?
+* `0` ?
+* `1` ?
+* `4` ?
+* `5` ?
+* `24` ?
+* `99` ?
+* `127` ?
 
-Des tests automatiques seront lancés dont vous pourrez voir les résultats sur github.
+# How to Submit
+
+Once you're done with all tasks, submit all your python files on Moodle
