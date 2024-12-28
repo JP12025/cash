@@ -9,10 +9,10 @@ He gives you a `1€` coin, so you have to give him `64` cents back.
 Knowing that you have coins of `50`, `20`, `10`, `5`, `2` and `1` cents, you have several ways of giving change.
 
 For instance:
-- `2x20 + 2x10 + 1x2 + 2x1` (7 coins)
-- `3x20 + 1x2 + 2x1` (6 coins)
-- `3x20 + 2x2` (5 coins)
-- `1x50 + 1x10 + 2x2` (4 coins)
+- `64 = 2x20 + 2x10 + 1x2 + 2x1` (7 coins)
+- `64 = 3x20 + 1x2 + 2x1` (6 coins)
+- `64 = 3x20 + 2x2` (5 coins)
+- `64 = 1x50 + 1x10 + 2x2` (4 coins)
 
 In a file called `cash.py`, implement a program that prints the minimum coins needed to make the given amount of change, in cents, as in the below:
 
