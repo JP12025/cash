@@ -17,10 +17,13 @@ For instance:
 - `64 = 3x20 + 2x2` (5 coins)
 - `64 = 1x50 + 1x10 + 2x2` (4 coins)
 
-In a file called `cash.py`, implement a program that prints the minimum coins needed to make the given amount of change, in cents, as in the below:
+In a file called `cash.py` (Python) or `cahs.jl` (Julia), implement a program that ask the user for an amount, then prints the minimum coins needed to make the given amount of change, in cents, as in the below:
 
 ```bash
 $ python cash.py
+Amount: 64
+4
+$ julia cash.jl
 Amount: 64
 4
 ```
@@ -41,7 +44,7 @@ Amount: 26
 > 
 > You begin with the greater coin (`50` cents), if its value is too high for the amount, try the next coin, etc. Once you find a suitable coin, count +1 and remove the value from the amount and retry until the amount is 0.
 > 
-> Be careful, a greedy algorithm is not always correct, ask yourself why (or ask chatGPT but don't trust it too much).
+> Be careful, a greedy algorithm is not always correct, ask yourself why (or ask chatGPT but never trust it).
 
 ```bash
 $ python cash.py
@@ -57,7 +60,9 @@ By Sunday, january 19, 2025 at 11:59 PM
 
 # How to Test
 
-- Test your script with command `./check cash.py`
+Test your script with command:
+- `./check -p cash.py` if you write Python code
+- `./check -j cash.jl` if you write Julia code
 
 What happens if the user input is :
 * `-1` ?
