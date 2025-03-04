@@ -17,7 +17,7 @@ For instance:
 - `64 = 3x20 + 2x2` (5 coins)
 - `64 = 1x50 + 1x10 + 2x2` (4 coins)
 
-In a file called `cash.py` (Python) or `cahs.jl` (Julia), implement a program that ask the user for an amount, then prints the minimum coins needed to make the given amount of change, in cents, as in the below:
+In a file called `cash.py` (Python) or `cash.jl` (Julia), implement a program that ask the user for an amount, then prints the minimum coins needed to make the given amount of change, in cents, as in the below:
 
 ```bash
 $ python cash.py
