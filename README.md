@@ -17,18 +17,16 @@ For instance:
 - `64 = 3x20 + 2x2` (5 coins)
 - `64 = 1x50 + 1x10 + 2x2` (4 coins)
 
-In a file called `cash.py` (Python) or `cash.jl` (Julia), implement a program that ask the user for an amount, then prints the minimum coins needed to make the given amount of change, in cents, as in the below:
+In a file called `cash.py`, implement a program that asks the user for an amount of change, in cents, then prints the minimum number of coins needed to give it back, as in the below:
 
 ```bash
 $ python cash.py
 Amount: 64
 4
-$ julia cash.jl
-Amount: 64
-4
 ```
 
 Re-prompt the user, again and again as needed, if their input is not between 1 and 99 included (or if their input isn’t an `int` at all!).
+Don't use `try/except` structure, it's not needed here. A `while` loop is ok.
 
 ```bash
 $ python cash.py
@@ -37,6 +35,9 @@ Amount: -2
 Amount: 26
 3
 ```
+
+> [!TIP]
+> To check that a string (`str`) contains only digits, you may use `isdigit()`. ([Python ref](https://docs.python.org/3/library/stdtypes.html#str.isdigit))
 
 > [!TIP]
 > If you already know how to change money, you certainly use the so called **greedy algorithm**. 
@@ -54,16 +55,20 @@ Amount: 24
 > [!TIP]
 > How many `50` cents appear in `64`? Well as simple as `64 // 50 = 1` (and you're left with `64 % 50 = 14` cents).
 
-# When to Do it
-
-By Sunday, january 11, 2026 at 11:59 PM
-
 # How to Test
 
-Test your script with command:
-- `./check -p cash.py` if you write Python code
-- `./check -j cash.jl` if you write Julia code
+Test your program from the exercise folder with:
 
+```bash
+python test_cash.py
+```
+
+(use `python3` instead of `python` if that is how you run Python on your computer).
+
+The script runs your program as a user would: it types some answers to the `Amount: ` question, then checks what your program prints.
+When a test fails, it explains what is wrong and shows the expected change (e.g. `64 = 1x50 + 1x10 + 2x2, so 4 coins`).
+
+Don't forget it's important to test your program yourself too.
 What happens if the user input is :
 * `-1` ?
 * `0` ?
@@ -73,6 +78,8 @@ What happens if the user input is :
 * `24` ?
 * `99` ?
 * `127` ?
+* letters or words?
+* nothing at all?
 
 # How to Submit
 
@@ -80,4 +87,4 @@ Once you're done with all tasks, submit all your python files on Moodle
 
 # Licence
 
-This course is freely inspird from [CS50’s Introduction to Computer Science](https://cs50.harvard.edu/x/2025/) Harvard. It is licensed under a [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license. 
+This course is freely inspired by [CS50’s Introduction to Computer Science](https://cs50.harvard.edu/x/2025/) Harvard. It is licensed under a [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license. 
