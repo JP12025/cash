@@ -41,7 +41,7 @@ Amount: 26
 > 
 > You begin with the greater coin (`50` cents), if its value is too high for the amount, try the next coin, etc. Once you find a suitable coin, count +1 and remove the value from the amount and retry until the amount is 0.
 > 
-> Be careful, a greedy algorithm is not always correct, ask yourself why (or ask chatGPT but never trust it).
+> Be careful, a greedy algorithm is not always correct, ask yourself why.
 
 ```bash
 $ python cash.py
