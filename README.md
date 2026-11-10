@@ -19,11 +19,7 @@ For instance:
 
 In a file called `cash.py`, implement a program that asks the user for an amount of change, in cents, then prints the minimum number of coins needed to give it back, as in the below:
 
-```bash
-$ python cash.py
-Amount: 64
-4
-```
+![Demo of cash.py](cash.gif)
 
 Re-prompt the user, again and again as needed, if their input is not between 1 and 99 included (or if their input isn’t an `int` at all!).
 Don't use `try/except` structure, it's not needed here. A `while` loop is ok.
